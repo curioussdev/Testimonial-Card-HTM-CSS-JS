@@ -14,3 +14,13 @@ body {
     font-size: 16px;
     background: linear-gradient(to right, hsl(186, 98%, 37%), hsl(170, 100%, 40%));
 }
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* Section Header*/
+
+/* Tetsimonials*/
