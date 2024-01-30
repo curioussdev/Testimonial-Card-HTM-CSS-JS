@@ -22,5 +22,18 @@ body {
 }
 
 /* Section Header*/
+.section-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header .title{
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.2;
+}
 
 /* Tetsimonials*/
+
