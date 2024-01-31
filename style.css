@@ -79,3 +79,13 @@ body {
     font-size: 14px;
     color: hsl(36, 88%, 66%)
 }
+.testimonials .swiper-pagination{
+    position: relative;
+    margin-top: 40px;
+    bottom: auto;
+}
+.testimonials .swiper-pagination-bullet{
+    height: 12px;
+    width: 12px;
+    background-color: #fff;
+}
