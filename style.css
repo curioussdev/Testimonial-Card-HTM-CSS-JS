@@ -59,7 +59,23 @@ body {
 .testimonials-item .name{
     font-size: 24px;
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 400;
     color: #000;
-    line-height: 1.2;
+    line-height: 1;
+}
+
+.testimonials-item .job{
+    text-transform: capitalize;
+    color: hsl(0, 0%, 50%);
+}
+
+.testimonials-item p{
+    margin-top: 20px;
+    color:  hsl(0, 0%, 50%);
+}
+
+.testimonials-item .rating{
+    margin-top: 15px;
+    font-size: 14px;
+    color: hsl(36, 88%, 66%)
 }

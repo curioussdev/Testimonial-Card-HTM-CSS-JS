@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -18,14 +19,14 @@
             </div>
 
             <div class="testimonials-content">
-                <div class="testimonials-slider js-testimonials-slider">
-                    <div>
-                        <div class="testimonials-item">
+                <div class="swiper testimonials-slider js-testimonials-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide testimonials-item">
                             <div class="info">
                                 <img class="imgTesti" src="bill.jpg" alt="img" />
                                 <div class="text-box">
-                                    <h3 class="name">José Lopes</h3>
-                                    <span class='job'>Web deloper</span>
+                                    <h3 class="name">Eduardo Mbala</h3>
+                                    <span class='job'>Professor</span>
                                 </div>
                             </div>
                             <p>"Eu vejo a Galileu moderna! Está na rede Web o nosso novo site.
@@ -41,7 +42,7 @@
                             </div>
                         </div>
 
-                        <div class="testimonials-item">
+                        <div class="swiper-slide testimonials-item">
                             <div class="info">
                                 <img class="imgTesti" src="anime.jpg" alt="img" />
                                 <div class="text-box">
@@ -62,7 +63,7 @@
                             </div>
                         </div>
 
-                        <div class="testimonials-item">
+                        <div class="swiper-slide testimonials-item">
                             <div class="info">
                                 <img class="imgTesti" src="unnamed.png" alt="img" />
                                 <div class="text-box">
@@ -83,7 +84,7 @@
                             </div>
                         </div>
 
-                        <div class="testimonials-item">
+                        <div class="swiper-slide testimonials-item">
                             <div class="info">
                                 <img class="imgTesti" src="unnamed.png" alt="img" />
                                 <div class="text-box">
@@ -105,9 +106,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="swiper-pagination js-testimonials-pagination"></div>
             </div>
         </div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.js-testimonials-slider', {
+            grabCursor: true,
+            spaceBetween:30,
+            pagination: {
+                el: '.js-testimonials-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                767:{
+                   slidesPerView: 2,
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
